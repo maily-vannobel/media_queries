@@ -1,0 +1,32 @@
+div {background-color: #88c1d0;
+     width:200px;
+     height: 200px;}
+
+/* PETITS ÉCRANS */
+@media screen and (min-width:1px) and (max-width:767px)
+     {
+         body {background-color: #ffffff;}
+     }
+         .blocaction {display: flex;
+                      flex-wrap: wrap;}
+         .blocaction > * {flex-direction: initial;}
+/* AUTRE TAILLE */
+
+@media screen and (min-width:768px) and (max-width:1599px)
+     {
+         body {background-color: #ffffff;}
+     }
+         .blocaction  {flex-direction: row;}
+         .blocaction > * {
+            flex-direction: initial; /* Réinitialisation de flex-direction pour les enfants, peut en mettre plusieurs */
+        }
+
+
+@media screen and (min-width:1600px) 
+     {
+         body {background-color: #ffffff;}
+     }
+         .blocaction {display: flex;
+                    flex-direction: row;}
+         .blocaction > * {flex-direction: initial;}
+            
